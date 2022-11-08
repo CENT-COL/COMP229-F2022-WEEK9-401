@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private router: Router) { }
 
   onSubmit(): void {
-    const {username, password} = this.form;
+    const {username, password} = this.form;    
 
     this.authService.login(username, password).subscribe({
         next: data => {

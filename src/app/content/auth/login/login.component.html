@@ -16,7 +16,7 @@
                         <i class="fa fa-user">
                         </i>
                       </span>
-                      <input type="text" class="form-control" id="username" name="username"  
+                      <input type="text" class="form-control" name="username"  
                        [(ngModel)]="form.username" #username="ngModel"  placeholder="Enter your username" required>
                     </div>
                     <div 
@@ -36,7 +36,7 @@
                         <i class="fa fa-lock">
                         </i>
                       </span>
-                      <input type="password" class="form-control" required
+                      <input type="password" name="password" class="form-control" required
                       [(ngModel)]="form.password" #password="ngModel" placeholder="Enter your password">
                     </div>
                     <div class="alert alert-danger" role="alert" *ngIf="password.errors?.['required'] && f.submitted">
